@@ -7,5 +7,6 @@ import (
 )
 
 type APIClient interface {
+	GetAsset(ctx context.Context) (entity.Asset, error)
 	Order(ctx context.Context, order entity.Order) error
 }
