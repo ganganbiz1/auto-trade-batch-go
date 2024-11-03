@@ -128,5 +128,6 @@ func (c *APIClient) GetAsset(ctx context.Context) ([]*entity.Asset, error) {
 }
 
 func (c *APIClient) Order(ctx context.Context, order entity.Order) error {
+	log.Println("order:", order)
 	return nil
 }
